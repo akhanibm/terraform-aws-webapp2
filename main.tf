@@ -17,7 +17,7 @@ resource "aws_sns_topic" "demo_topic" {
 }
 
 resource "aws_dynamodb_table" "tfc_example_table" {
-  name         = "se-demo-table"
+  name         = "se-demo-table-unique" # Changed from se-demo-table
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
 
